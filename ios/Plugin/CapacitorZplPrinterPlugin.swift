@@ -23,6 +23,8 @@ public class CapacitorZplPrinterPlugin: CAPPlugin {
         let prints = call.getInt("prints", 1)
         
         
-        call.resolve()
+        call.resolve([
+            "value":ip+" .."
+        ])
     }
 }
