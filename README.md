@@ -13,12 +13,26 @@ npx cap sync
 
 <docgen-index>
 
+* [`print(...)`](#print)
 * [`echo(...)`](#echo)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### print(...)
+```typescript
+print(options: PrintOptions) => Promise<any>
+```
+
+| Param         | Type                            |
+| ------------- | ------------------------------- |
+| **`options`** | <code>PrintOptions</code> |
+
+**Returns:** <code>Promise&lt;any&gt;</code>
+
+--------------------
 
 ### echo(...)
 
