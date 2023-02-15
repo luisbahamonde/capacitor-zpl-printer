@@ -15,6 +15,7 @@ npx cap sync
 
 * [`print(...)`](#print)
 * [`echo(...)`](#echo)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -22,17 +23,21 @@ npx cap sync
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
 ### print(...)
+
 ```typescript
 print(options: PrintOptions) => Promise<any>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>PrintOptions</code> |
+send ZPL code to a printer through an IP address and a port to be printed
+
+| Param         | Type                                                  |
+| ------------- | ----------------------------------------------------- |
+| **`options`** | <code><a href="#printoptions">PrintOptions</a></code> |
 
 **Returns:** <code>Promise&lt;any&gt;</code>
 
 --------------------
+
 
 ### echo(...)
 
@@ -47,5 +52,18 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
+
+
+### Interfaces
+
+
+#### PrintOptions
+
+| Prop         | Type                | Description                                      |
+| ------------ | ------------------- | ------------------------------------------------ |
+| **`ip`**     | <code>string</code> | IP address where the printer is located          |
+| **`port`**   | <code>number</code> | Port through which the printer is connected      |
+| **`zpl`**    | <code>string</code> | ZPL code to be printed                           |
+| **`prints`** | <code>number</code> | Number of impressions, by default one is printed |
 
 </docgen-api>
