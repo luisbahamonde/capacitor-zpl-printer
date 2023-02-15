@@ -1,6 +1,6 @@
 {
   "name": "capacitor-zpl-printer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Connects with label printers that use the ZPL language",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
