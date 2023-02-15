@@ -1,13 +1,14 @@
-import { WebPlugin } from '@capacitor/core';
+import {WebPlugin} from '@capacitor/core';
 
-import type { CapacitorZplPrinterPlugin } from './definitions';
+import type {CapacitorZplPrinterPlugin} from './definitions';
+import {PrintOptions} from "./definitions";
 
-export class CapacitorZplPrinterWeb
-  extends WebPlugin
-  implements CapacitorZplPrinterPlugin
-{
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
-  }
+export class CapacitorZplPrinterWeb extends WebPlugin implements CapacitorZplPrinterPlugin {
+
+    async echo(options: { value: string }): Promise<{ value: string }> {
+        console.log('ECHO', options);
+        return options;
+    }
+
+    print(): any{}
 }
