@@ -1,7 +1,6 @@
 import {WebPlugin} from '@capacitor/core';
 
 import type {CapacitorZplPrinterPlugin} from './definitions';
-import {PrintOptions} from "./definitions";
 
 export class CapacitorZplPrinterWeb extends WebPlugin implements CapacitorZplPrinterPlugin {
 
